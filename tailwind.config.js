@@ -15,6 +15,9 @@ export default {
         800: "#262622",
       },
     },
+    backgroundImage: {
+      "body-texture": "url('src/assets/texture-2.png')",
+    },
   },
   plugins: [],
 };

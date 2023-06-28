@@ -8,6 +8,9 @@
   button {
     @apply text-skin-500 rounded-lg mt-2 border border-skin-500 hover:bg-skin-800 hover:text-skin-100 hover:gap-6 transition-all ease-linear;
   }
+  .textured {
+    @apply bg-body-texture bg-opacity-5 bg-cover;
+  }
 }
 
 #root {
@@ -15,11 +18,21 @@
   font-family: "Satoshi", sans-serif;
 }
 
-.background {
-  background: linear-gradient(300deg, deepskyblue, darkviolet, blue);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+.animate {
+  animation: text-animation 5s ease infinite;
 }
+@keyframes text-animation {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
