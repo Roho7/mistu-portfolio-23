@@ -11,6 +11,9 @@
   .textured {
     @apply bg-body-texture bg-opacity-5 bg-cover;
   }
+  .tooltip {
+    @apply absolute -top-2 py-1 px-2 rounded-md bg-skin-800 text-skin-100  opacity-0 group-hover:opacity-100  transition-all ease-linear;
+  }
 }
 
 #root {
