@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  button {
+    @apply text-skin-500 rounded-lg mt-2 border border-skin-500 hover:bg-skin-800 hover:text-skin-100 hover:gap-6 transition-all ease-linear;
+  }
+}
+
 #root {
   box-sizing: border-box;
   font-family: "Satoshi", sans-serif;
