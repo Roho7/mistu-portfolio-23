@@ -1,9 +1,12 @@
+@import url("https://api.fontshare.com/v2/css?f=satoshi@500,300,400&f=cabinet-grotesk@400,200&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 #root {
   box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
 }
 
 .background {

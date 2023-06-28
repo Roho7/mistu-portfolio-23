@@ -6,7 +6,7 @@ import { AiFillHome, AiTwotoneProject } from "react-icons/ai";
 
 function Navbar() {
   return (
-    <header className="sticky z-10 top-0 mb-4 flex  justify-evenly p-2 rounded-xl bg-purple-200 text-purple-500 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60 border border-gray-100 ">
+    <header className="sticky z-10 top-0 flex  justify-evenly p-2 rounded-xl bg-gray-200  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60 border ">
       <Link to="/" className="flex flex-col items-center">
         <AiFillHome />
         Home
