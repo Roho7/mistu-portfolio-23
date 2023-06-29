@@ -23,7 +23,7 @@ function Home() {
           <div className="p-2 mb-4 border w-20 border-skin-800">LOGO</div>
           <h1 className="text-2xl font-sans">Hi!</h1>
           <h1 className="text-6xl font-fancy">I'm Mistu</h1>
-          <h1 className="text-lg font-fancy">
+          <h1 className="bg-skin-100 px-2 text-lg font-fancy text-skin-500">
             I'm an artist. Welcome to my porfolio!
           </h1>
           <button className="py-1 px-4 font-fancy text-sm flex gap-2 items-center">
