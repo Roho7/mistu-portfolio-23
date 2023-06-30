@@ -14,8 +14,24 @@
   .tooltip {
     @apply absolute -top-2 py-1 px-2 rounded-md bg-skin-800 text-skin-100  opacity-0 group-hover:opacity-100  transition-all ease-linear;
   }
-  p{
-    @apply m-2
+  p {
+    @apply m-2;
+  }
+  .floating-text-container {
+    @apply flex text-skin-100 bg-skin-800;
+    animation: side-move 15s linear infinite;
+  }
+  .floating-text {
+    @apply flex text-5xl font-fancy font-bold whitespace-nowrap bg-skin-800;
+  }
+}
+
+@keyframes side-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -41,25 +57,25 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    border-radius: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 8px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    /* background: #59594F; */
+  /* background: #59594F; */
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #B2B29F;
-    border-radius: 24px;
+  background: #b2b29f;
+  border-radius: 24px;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 @keyframes gradient-animation {
