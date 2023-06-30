@@ -24,6 +24,9 @@
   .floating-text {
     @apply flex text-5xl font-fancy font-bold whitespace-nowrap bg-skin-800;
   }
+  h1 {
+    @apply font-fancy items-center;
+  }
 }
 
 @keyframes side-move {
@@ -37,6 +40,7 @@
 
 #root {
   box-sizing: border-box;
+  overflow: hidden;
   font-family: "Satoshi", sans-serif;
 }
 

@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="textured bg-skin-100 h-screen">
+    <div className="textured bg-skin-100 h-screen relative">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

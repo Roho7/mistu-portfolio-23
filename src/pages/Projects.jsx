@@ -85,7 +85,6 @@ const floatText = [
   "character design",
   "sketches",
 ];
-console.log(floatText);
 
 function Projects() {
   const scrollRef = useHorizontalScroll();
