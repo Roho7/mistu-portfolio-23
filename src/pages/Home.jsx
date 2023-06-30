@@ -42,7 +42,7 @@ function Home() {
   };
   return (
     <>
-      <div className="absolute flex flex-nowrap -rotate-90 right-96 -left-96">
+      <div className="absolute flex flex-nowrap -rotate-90 right-96 -left-96 sm:rotate-0 sm:top-3/4">
         <div className="floating-text-container ">
           {floatText.map((txt) => {
             return (
@@ -64,7 +64,7 @@ function Home() {
         </div>
       </div>
       <div className="relative h-full flex flex-col justify-center items-center rounded-xl text-skin-800">
-        <div className="absolute w-20 top-10 left-10">
+        <div className="absolute w-20 top-10 left-10 sm:left-2">
           <img src="./assets/logo-1.png" alt="" />
         </div>
         <div className="text-left z-10">
@@ -80,13 +80,11 @@ function Home() {
             Projects <ArrowRightIcon />
           </button>
         </div>
-        <div className="w-1/4 absolute right-80">
-          <img src="src/assets/mistu-1.png" alt="" className="shifty " />
-        </div>
-        <div className="font-fancy font-bold rotate-90 text-6xl absolute right-64 text-skin-500">
-          <p className="variable-text absolute right-2 top-0">
-            {textArray[text]}
-          </p>
+        <div className="w-1/4 absolute right-80 sm:-right-10 sm:w-3/4">
+          <img src="src/assets/mistu-1.png" alt="" className="shifty" />
+          <div className="absolute font-fancy font-bold rotate-90 text-6xl sm:text-4xl right-0 bottom-0 left-0 top-10 sm:top-0 sm:-left-32 sm: text-skin-100 mix-blend-difference whitespace-nowrap">
+            <p className="variable-text">{textArray[text]}</p>
+          </div>
         </div>
       </div>
     </>

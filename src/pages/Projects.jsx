@@ -89,7 +89,7 @@ const floatText = [
 function Projects() {
   const scrollRef = useHorizontalScroll();
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col justify-between h-screen overflow-hidden gap-8">
       <div className="flex flex-nowrap">
         <div className="floating-text-container">
           {floatText.map((txt) => {
@@ -112,14 +112,14 @@ function Projects() {
         </div>
       </div>
       <div className="flex flex-col items-center relative">
-        <div className="relative text-center mt-16 font-fancy font-bold text-4xl px-4">
+        <div className="relative text-center mt-4 font-fancy font-bold text-4xl px-4">
           <h1 className="relative z-10 text-skin-100">My Work</h1>
           <div className="absolute h-full w-full top-0 left-0 bg-skin-800 rotate-6 z-0 "></div>
         </div>
       </div>
-      <div className="flex items-center px-8 h-3/4">
+      <div className="flex px-8 h-full">
         <div
-          className="grid grid-rows-1 grid-flow-col h-3/4 gap-4 overflow-x-auto items-center"
+          className="grid grid-rows-1 grid-flow-col sm:grid-rows-2 h-full gap-4 overflow-x-auto items-center overflow-y-visible"
           ref={scrollRef}
         >
           {projects.map((project) => {
