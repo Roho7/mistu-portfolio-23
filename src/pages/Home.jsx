@@ -63,10 +63,10 @@ function Home() {
           })}
         </div>
       </div>
+      <div className="absolute w-20 top-10 left-10 sm:left-4 sm:top-4">
+        <img src="./assets/logo-1.png" alt="" />
+      </div>
       <div className="relative h-full flex flex-col justify-center items-center rounded-xl text-skin-800">
-        <div className="absolute w-20 top-10 left-10 sm:left-2">
-          <img src="./assets/logo-1.png" alt="" />
-        </div>
         <div className="text-left z-10">
           <h1 className="text-2xl font-sans">Hi!</h1>
           <h1 className="text-6xl font-fancy">I'm Mistu</h1>
