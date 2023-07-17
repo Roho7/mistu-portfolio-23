@@ -55,7 +55,9 @@ function Hamburger() {
         </div>
       </div>
       <div
-        className={menu ? "hamburger-screen" : "hidden"}
+        className={
+          menu ? "hamburger-screen" : "hamburger-screen opacity-0 hidden"
+        }
         onClick={handleMenuClose}
       ></div>
     </>
